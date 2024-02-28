@@ -1,43 +1,23 @@
 import './App.css';
-import p6 from './images/p6.png'
 
+import { Routes, Route } from "react-router-dom";
+
+import Home from './Home';
+import Study from './Study';
 function App() {
+
+
   return (
-    <div className="App">
-      <div className='navbar'>
-      
-        
+     <Routes>
+          <Route path='/' element = {<Home />}></Route>
+          <Route path='/study' element = {<Study />}></Route>
 
-				<a href="newsletter.html" onclick="closeNav()">Newsletter</a>
-				{/* <a href="journey_so_far.html" onclick="closeNav()">My Journey</a> */}
-				<a href=" blog.html" onclick="closeNav()">Study Material</a>
-				{/* <a href="testimonials.html" onclick="closeNav()">Testimonials</a> */}
-				<a href="#Contact" onclick="closeNav()">Contact</a>
-
-      </div>
-
-      <div className='name'>
-        <h1>Himalay Jariwala</h1>
-        <div className='info'>
-        <p>FAA Certified Flight Instructor</p>
-				<p>CFI/CFII</p>
-        </div>
-      </div>
+        </Routes>
+    
 
 
-<div className='info_details'> 
-				<p>Namaste!</p>
-				<p>I am a Certified Flight Instructor,</p>
-				<p>With About <span>500 hours of Dual</span> Instructions given.</p>
-				<p>I have acquired around <span>1200 Hours</span> of Total Flight Time.</p>
-<br></br>
-				<p>Currently Instructing at : </p><br></br>
-        <button><a href="https://www.p6aviation.com/"><img src={p6} alt="p6"></img></a></button>
-</div>
-        <div id='Contact'>
-          
-        </div>
-    </div>
+   
+
   );
 }
 
