@@ -20,12 +20,15 @@ html {
   max-width: 100%;
   height: 100vh;
   overflow-x: hidden;
-  background-image: linear-gradient( rgb(80, 137, 207), rgb(53, 83, 129)); 
+  background-image: linear-gradient( rgb(130, 181, 244), rgb(118, 169, 247)); 
 
 }
 
 button {
   cursor: pointer;
+  :hover{
+    color: red;
+  }
 }
 
 .navbar{
@@ -51,8 +54,27 @@ button {
             text-decoration: none;
             color: aliceblue;
 
+            :hover{
+                color: red;
+              }
+
+              
+
         }
 }
+
+.footer{
+    background-color: rgb(21, 21, 22);
+    color : white;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    border-top: solid 2px black;
+    
+}
+
+
+
 @media (min-width: 300px) and (min-height:300px) and (max-width:500px){
     .navbar{
         font-size:  calc(10px + 1px + 2px);
@@ -73,7 +95,17 @@ button {
                 color: aliceblue;
                 margin: 8px;
         font-weight: bold;
-        font-size:  calc(11px + 1px + 2px);
+        font-size:  calc(13px + 1px + 2px);
+        position: relative;
+        justify-content: space-evenly;
+
+                    :hover{
+                        color :red
+                    }
+            }
+
+            :hover{
+                color :red
             }
 
     }
@@ -115,6 +147,8 @@ button {
         height: 50px;
     }
 }
+
+
 
 .email{
     position: sticky;

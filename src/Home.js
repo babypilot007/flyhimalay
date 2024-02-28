@@ -1,7 +1,8 @@
 import React from 'react'
 import p6 from './images/p6.png'
 import Nav from './Nav';
-import Email from './Email';
+// import Email from './Email';
+import Footer from './Footer';
 
 function Home() {
   return (
@@ -33,7 +34,8 @@ function Home() {
       </div>
   </div>
 
-    <Email />
+  <Footer />
+
   </>
   )
 }
