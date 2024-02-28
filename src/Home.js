@@ -1,6 +1,7 @@
 import React from 'react'
 import p6 from './images/p6.png'
 import Nav from './Nav';
+import Email from './Email';
 
 function Home() {
   return (
@@ -32,6 +33,7 @@ function Home() {
       </div>
   </div>
 
+    <Email />
   </>
   )
 }

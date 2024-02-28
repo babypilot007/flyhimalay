@@ -116,6 +116,22 @@ button {
     }
 }
 
+.email{
+    position: sticky;
+    bottom: 0px;
+    color: white ;
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    box-shadow: 5px 0px 10px black;
+
+    button{
+        color: rgb(208, 239, 252);
+        font-size: medium;
+        font-weight: 600;
+    }
+}
+
 #Contact {
     position: relative;
     z-index: 0;
