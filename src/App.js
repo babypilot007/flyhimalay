@@ -8,11 +8,11 @@ function App() {
       
         
 
-				{/* <a href="newsletter.html" onclick="closeNav()">Newsletter</a>
+				<a href="newsletter.html" onclick="closeNav()">Newsletter</a>
 				<a href="journey_so_far.html" onclick="closeNav()">My Journey</a>
 				<a href=" blog.html" onclick="closeNav()">Study Material</a>
-				<a href="#" onclick="closeNav()">Testimonials</a>
-				<a href="#Contact" onclick="closeNav()">Contact</a> */}
+				<a href="testimonials.html" onclick="closeNav()">Testimonials</a>
+				<a href="#Contact" onclick="closeNav()">Contact</a>
 
       </div>
 
