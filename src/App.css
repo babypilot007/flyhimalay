@@ -55,7 +55,7 @@ button {
 }
 @media (min-width: 300px) and (min-height:300px) and (max-width:500px){
     .navbar{
-        font-size:  calc(8px + 1px + 2px);
+        font-size:  calc(10px + 1px + 2px);
         padding: 5px;
         position: sticky;
         top: 0;
