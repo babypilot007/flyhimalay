@@ -1,8 +1,12 @@
 import React from 'react'
 import Nav from './Nav'
 import Email from './Email'
+import { useNavigate } from 'react-router-dom';
+
 
 function Study() {
+    const navigate = useNavigate()
+
   return (
     <>    
         <Nav />
@@ -16,22 +20,21 @@ function Study() {
 
         <div className='course_index'>
             <div className='ppl'>
-                <a href="ppl_study.html">
-                    <p>Private Pilot </p>
-                </a>
+
+             <button onClick={()=>{navigate('/study/ppl')}}><p>Private Pilot </p></button>
+
+                    
             </div>
 
             <div className='instrument'>
-                <a href="Inst_study.html" >
-                    <p>Instrument Rating</p>
-                </a>
+
+             <button onClick={()=>{navigate('/study/instrument')}}><p>Instrument Rating</p></button>
+
             </div>
 
             <div className='cpl'>
-                <a href="Cpl_study.html">
+            <button onClick={()=>{navigate('/study/cpl')}}> <p>Commercial Certificate</p></button>
 
-                    <p>Commercial Certificate</p>
-                </a>
             </div>
         </div>
 
