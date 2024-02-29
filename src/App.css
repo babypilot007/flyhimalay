@@ -160,6 +160,7 @@ html {
     border: solid 2px rgb(1, 1, 6);
     border-radius: 10px;
     font-weight: 700;
+    line-height: 28px;
     
     button {
         width: 100%;

@@ -27,6 +27,7 @@ function Home() {
               <p>I have acquired around <span>1200 Hours</span> of Total Flight Time.</p>
 <br></br>
               <p>Currently Instructing at : </p><br></br>
+              
               <div className='img'>
             <a href="https://www.p6aviation.com/"><img src={p6} alt="p6"></img></a>
             </div>
