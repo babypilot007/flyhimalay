@@ -7,7 +7,8 @@
 
 button {
   border: none;
-  background-color: rgba(255, 0, 0, 0);
+  cursor: pointer;
+
 }
 
 html {
@@ -27,10 +28,7 @@ html {
 
 }
 
-button {
-  cursor: pointer;
- 
-}
+
 
 .navbar{
     font-size:  calc(.5vw + 1vh + 1vmin);
@@ -54,6 +52,8 @@ button {
         button{
             text-decoration: none;
             color: aliceblue;
+            background-color: rgb(21, 21, 22);
+
 
             :hover{
                 color: red;
@@ -67,10 +67,6 @@ button {
 
 
 
-
-.ppl{
-
-}
 
 .footer{
     text-align: center;
@@ -168,14 +164,23 @@ button {
     button {
         width: 100%;
     }
-    img{
-        background-color: rgb(15, 12, 12);
-        align-items: center;
-        margin: 5px;
+   
+
+    
+}
+
+.img{
+    background-color: rgb(15, 12, 12);
         border-radius: 10px;
-        width: 200px;
-        height: 50px;
-    }
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        img{
+            height: 50px;
+        
+        }
+
 }
 
 .courses{
@@ -201,7 +206,7 @@ button {
     button{
         margin-top: 20px;
         background-color: rgb(12, 22, 42);
-        padding: 15px;
+        padding: 20px;
         border-radius: 10px;
         color:white;
         font-size: 25px;
