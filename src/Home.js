@@ -6,10 +6,10 @@ import Footer from './Footer';
 
 function Home() {
   return (
-<>
+< div className='main'>
 <Nav />
 
-    <div className="App">
+<div className="App">
     
     <div className='name'>
       <h1>Himalay Jariwala</h1>
@@ -29,14 +29,12 @@ function Home() {
               <p>Currently Instructing at : </p><br></br>
       <button><a href="https://www.p6aviation.com/"><img src={p6} alt="p6"></img></a></button>
 </div>
-      <div id='Contact'>
-        
-      </div>
+      
   </div>
 
   <Footer />
 
-  </>
+  </div>
   )
 }
 
