@@ -29,9 +29,7 @@ html {
 
 button {
   cursor: pointer;
-  :hover{
-    color: red;
-  }
+ 
 }
 
 .navbar{
@@ -207,6 +205,9 @@ button {
         border-radius: 10px;
         color:white;
         font-size: 25px;
+        :hover{
+            color: red;
+          }
     }
 
 }
