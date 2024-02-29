@@ -170,14 +170,15 @@ html {
 }
 
 .img{
-    background-color: rgb(15, 12, 12);
         border-radius: 10px;
         position: relative;
         display: flex;
         justify-content: center;
 
         img{
-            height: 50px;
+        height: 50px;
+        background-color: rgb(15, 12, 12);
+        border-radius: 10px; 
         
         }
 
