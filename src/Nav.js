@@ -9,7 +9,7 @@ export default function Nav() {
 
     <button onClick={()=>{navigate('/')}}>Home</button>
     <button onClick={()=>{navigate('/study')}}>Study Material</button>
-    <button onClick={()=>{navigate('')}}>Testimonials</button>
+    <button onClick={()=>{navigate('/testimony')}}>Testimonials</button>
     <button onClick={()=>{navigate('')}}>Contact</button>
 
     

@@ -3,11 +3,13 @@ import Ppl from './Ppl';
 import Instrument from './Instrument';
 import Cpl from './Cpl';
 import Blog from './Blog';
+import Testimony from './Testimony';
 
 import { Routes, Route } from "react-router-dom";
 
 import Home from './Home';
 import Study from './Study';
+
 function App() {
 
 
@@ -19,6 +21,8 @@ function App() {
           <Route path='/study/instrument' element = {<Instrument />}></Route>
           <Route path='/study/cpl' element = {<Cpl />}></Route>
           <Route path='/blog' element = {<Blog />}></Route>
+          <Route path='/testimony' element = {<Testimony />}></Route>
+
 
 
 

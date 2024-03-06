@@ -1032,6 +1032,7 @@ html {
     h3{
         margin-top: 20px;
         font-size: 30px;
+        
     }
     
 }   
@@ -1060,7 +1061,35 @@ html {
     }
 }
 
+h3{
+    text-align: center;
+}
 
+.testimonies{
+    text-align: center;
+    margin-top: 25px;
+    
+}
+
+.testDiv{
+    border: solid 1px rgb(9, 9, 39);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    height: 70px;
+    background-color:rgba(209, 210, 214, 0.582) ;
+    text-align: left ;
+
+    p{
+        font-weight: 600;
+    }
+    
+}
+
+.namehead{
+    margin-top: 25px;
+    text-align: left ;
+}
 
 
 /* -----------------------------------------medium device------------------------ */
