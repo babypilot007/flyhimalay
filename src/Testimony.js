@@ -2,6 +2,7 @@ import React from 'react'
 import { supabase } from './supabaseClient'
 import { useState,useEffect} from 'react'
 import Nav from './Nav'
+import Email from './Email'
 
 
 function Testimony() {
@@ -29,6 +30,7 @@ function Testimony() {
 
   console.log(res)
   return (
+    <>
     <div className='App'>
         <Nav/>
         <div className='testimonies'>
@@ -48,6 +50,8 @@ function Testimony() {
             }) :null}
         </div>
     </div>
+        <Email/>
+        </>
   )
 }
 

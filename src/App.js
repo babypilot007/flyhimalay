@@ -5,6 +5,7 @@ import Cpl from './Cpl';
 import Blog from './Blog';
 import Testimony from './Testimony';
 import Notfound from './Notfound';
+import Contact from './Contact';
 
 import { Routes, Route } from "react-router-dom";
 
@@ -23,6 +24,8 @@ function App() {
           <Route path='/study/cpl' element = {<Cpl />}></Route>
           <Route path='/blog' element = {<Blog />}></Route>
           <Route path='/testimony' element = {<Testimony />}></Route>
+          <Route path='/contact' element = {<Contact />}></Route>
+
           <Route path='*' element = {<Notfound />}></Route>
 
 
