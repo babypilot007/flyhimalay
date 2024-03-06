@@ -2,6 +2,7 @@ import './App.css';
 import Ppl from './Ppl';
 import Instrument from './Instrument';
 import Cpl from './Cpl';
+import Blog from './Blog';
 
 import { Routes, Route } from "react-router-dom";
 
@@ -17,6 +18,8 @@ function App() {
           <Route path='/study/Ppl' element = {<Ppl />}></Route>
           <Route path='/study/instrument' element = {<Instrument />}></Route>
           <Route path='/study/cpl' element = {<Cpl />}></Route>
+          <Route path='/blog' element = {<Blog />}></Route>
+
 
 
 
