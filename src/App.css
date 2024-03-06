@@ -211,11 +211,22 @@ html {
         padding: 20px;
         border-radius: 10px;
         color:white;
-        font-size: 25px;
-        :hover{
+        font-size: 20px;
+        border: rgb(41, 25, 25) solid;
+
+          :hover{
             color: red;
           }
+
+          :active{
+            height:fit-content ;
+            color: red;
+            
+          }
+         
     }
+
+   
 
 }
 

@@ -21,19 +21,19 @@ function Study() {
         <div className='course_index'>
             <div className='ppl'>
 
-             <button onClick={()=>{navigate('/study/ppl')}}><p>Private Pilot </p></button>
+             <button onClick={()=>{navigate('/study/ppl')}}><p>Private Pilot Course </p></button>
 
                     
             </div>
 
             <div className='instrument'>
 
-             <button onClick={()=>{navigate('/study/instrument')}}><p>Instrument Rating</p></button>
+             <button onClick={()=>{navigate('/study/instrument')}}><p>Instrument Rating Course</p></button>
 
             </div>
 
             <div className='cpl'>
-            <button onClick={()=>{navigate('/study/cpl')}}> <p>Commercial Certificate</p></button>
+            <button onClick={()=>{navigate('/study/cpl')}}> <p>Commercial Certificate Course</p></button>
 
             </div>
         </div>
