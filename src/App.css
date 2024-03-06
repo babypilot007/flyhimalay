@@ -1091,7 +1091,10 @@ h3{
     text-align: left ;
 }
 
-
+.head{
+    text-align: center;
+    margin-top: 40%
+}
 /* -----------------------------------------medium device------------------------ */
 
 

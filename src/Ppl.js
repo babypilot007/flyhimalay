@@ -7,7 +7,9 @@ function Ppl() {
     <>
     <Nav />
     <div className='App'>
-
+      <div className='head'>
+      <h1>Coming Soon</h1>
+      </div>
     </div>
     <Email/>
     </>
