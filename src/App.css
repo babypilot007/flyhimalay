@@ -1025,8 +1025,40 @@ html {
 
 }
 
+.area{
+    justify-content: center;
+    text-align: center;
 
+    h3{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    
+}   
 
+.text{
+    margin: 10px;
+    width: 85%;
+    padding: 10px;
+    border: solid black 1px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.postbtn{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+    button{
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 15px;
+        background-color: rgb(38, 75, 108);
+        color: aliceblue;
+    }
+}
 
 
 

@@ -7,12 +7,13 @@ function Blog() {
     <div className='App'>
 
         <div className='area'>
+        
         <h3>Review</h3>
 
-        <textarea rows='20' cols='20' className='text'></textarea>
-        <h3>Name</h3>
+        <textarea rows='20' cols='20' className='text' placeholder='Write a Review'></textarea>
 
-        <input type='text' className='text'></input>
+        <input type='text' className='text' placeholder='Name'></input>
+
         </div>
 
         <div className='postbtn'>
