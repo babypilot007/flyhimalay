@@ -1,8 +1,14 @@
 import React from 'react'
+import Nav from './Nav'
 
 function Instrument() {
   return (
-    <div className='App'>Instrument</div>
+    <>
+    <Nav />
+    <div className='App'>
+
+    </div>
+    </>
   )
 }
 

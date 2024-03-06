@@ -7,9 +7,11 @@ export default function Nav() {
   return (
     <div className='navbar'>
 
+    <button onClick={()=>{navigate('/')}}>Home</button>
     <button onClick={()=>{navigate('/study')}}>Study Material</button>
     <button onClick={()=>{navigate('')}}>Testimonials</button>
     <button onClick={()=>{navigate('')}}>Contact</button>
+
     
     
     </div>

@@ -1,8 +1,17 @@
 import React from 'react'
+import Nav from './Nav'
+import Email from './Email'
 
 function Cpl() {
   return (
-    <div className='App'>Cpl</div>
+    <>
+    <Nav />
+    <div className='App'>
+
+    </div>
+
+    <Email />
+    </>
   )
 }
 
