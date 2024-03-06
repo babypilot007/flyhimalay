@@ -1,5 +1,6 @@
 import React from 'react'
 import Nav from './Nav'
+import Email from './Email'
 
 function Instrument() {
   return (
@@ -10,6 +11,8 @@ function Instrument() {
       <h1>Coming Soon</h1>
       </div>
     </div>
+
+    <Email/>
     </>
   )
 }
