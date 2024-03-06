@@ -30,39 +30,7 @@ html {
 
 
 
-.navbar{
-    font-size:  calc(.5vw + 1vh + 1vmin);
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    color: azure;
-    padding: 5px;
-    padding-right: 20px;
-    background-color: rgb(21, 21, 22);
-        justify-content: right;
-        position: relative;
-        display: flex ;
 
-        a{
-            text-decoration: none;
-            color: aliceblue;
-            margin: 10px;
-        }
-
-        button{
-            text-decoration: none;
-            color: aliceblue;
-            background-color: rgb(21, 21, 22);
-
-
-            :hover{
-                color: red;
-              }
-
-              
-
-        }
-}
 
 
 
@@ -93,7 +61,7 @@ html {
 
 @media (min-width: 300px) and (min-height:300px) and (max-width:500px){
     
-    .navbar{
+    .nav{
         font-size:  calc(10px + 1px + 2px);
         padding: 5px;
         position: sticky;
@@ -125,6 +93,36 @@ html {
                 color :red
             }
 
+    }
+    .nav{
+        font-size:  calc(.5vw + 1vh + 1vmin);
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        color: azure;
+        padding: 5px;
+        background-color: rgb(21, 21, 22);
+            justify-content: right;
+            position: relative;
+            display: flex ;
+    
+            a{
+                text-decoration: none;
+                color: aliceblue;
+                margin: 10px;
+            }
+    
+            button{
+                text-decoration: none;
+                color: aliceblue;
+                background-color: rgb(21, 21, 22);
+    
+    
+            
+    
+                  
+    
+            }
     }
 
     span{

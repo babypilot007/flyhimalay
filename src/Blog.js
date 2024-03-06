@@ -29,6 +29,13 @@ function Blog() {
  
 
   }
+
+  function clear(){
+    setReview("");
+    setUserName('');
+    setMessage('We recieved your Review, Thank You!')
+  }
+
   return (
 <div className='App'>
 
@@ -37,7 +44,6 @@ function Blog() {
         <h3>Review</h3>
 
 
-<form className="signupform" onSubmit={postReview}>
 
 
 <textarea rows='20' cols='20' 
@@ -54,19 +60,16 @@ onChange={(e) => setReview(e.target.value)}
     onChange={(e) => setUserName(e.target.value)}/>
 
 <div className='postbtn'>
-           <button onClick={() => {postReview();setReview("");setUserName('');setMessage('We recieved your Review, Thank You!')
+           <button onClick={() => {postReview();clear()
 }}>Post Review</button>
         </div>
 
-</form>
 
 
     
        
 
         </div>
-
-       
 
         <h3>{message}</h3>
 

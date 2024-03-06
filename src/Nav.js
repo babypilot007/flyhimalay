@@ -5,7 +5,7 @@ export default function Nav() {
     const navigate = useNavigate()
 
   return (
-    <div className='navbar'>
+    <div className='nav'>
 
     <button onClick={()=>{navigate('/')}}>Home</button>
     <button onClick={()=>{navigate('/study')}}>Study Material</button>
