@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import prop from './images/prop.png'
 
+
 export default function Nav() {
     const navigate = useNavigate()
 
@@ -56,6 +57,8 @@ export default function Nav() {
      <li> <button onClick={()=>{navigate('/study')}}>Study Material</button></li>
      <li> <button onClick={()=>{navigate('/testimony')}}>Testimonials</button></li>
        <li><button onClick={()=>{navigate('/contact')}}>Contact</button></li>
+      <br/> <li><button onClick={()=>{navigate('/newsletter')}}>Newsletter</button></li>
+
        </ul>
 
 </div> : null}

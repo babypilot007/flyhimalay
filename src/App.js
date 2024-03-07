@@ -6,6 +6,7 @@ import Blog from './Blog';
 import Testimony from './Testimony';
 import Notfound from './Notfound';
 import Contact from './Contact';
+import Newsletter from './Newsletter';
 
 import { Routes, Route } from "react-router-dom";
 
@@ -25,6 +26,8 @@ function App() {
           <Route path='/blog' element = {<Blog />}></Route>
           <Route path='/testimony' element = {<Testimony />}></Route>
           <Route path='/contact' element = {<Contact />}></Route>
+          <Route path='/newsletter' element = {<Newsletter />}></Route>
+
 
           <Route path='*' element = {<Notfound />}></Route>
 
