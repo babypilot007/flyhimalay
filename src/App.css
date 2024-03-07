@@ -1,4 +1,20 @@
 
+
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+.noSelect:focus {
+    outline: none !important;
+}
+
+
 button {
   border: none;
   cursor: pointer;
@@ -77,7 +93,7 @@ html {
 }
 .propImg{
     height: 52px;
-
+    cursor: none
 }
 .propImg[rot = '1']{
     animation: rot_init .3s 1 forwards  ;

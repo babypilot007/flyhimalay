@@ -20,7 +20,7 @@ export default function Nav() {
 
         if(navTans === 1)
         {
-          setNavTrans(0)
+          setNavTrans(3)
         }
 
         if(rot === 0){
@@ -43,7 +43,7 @@ export default function Nav() {
       // onAnimationEnd={() => setRot(0)}
       rot = {rot}
       
-      ><img src={prop} alt='prop'></img></button>
+      ><img  className='noSelect' src={prop} alt='prop'></img></button>
     
       </div >
 
