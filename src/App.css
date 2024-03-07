@@ -9,7 +9,21 @@ button {
   margin-top: 5px;
   margin-bottom: 5px;
   font-weight: bold;
-  
+  border-radius: 5px;
+}
+
+.socicons{
+    margin-top: 40px;
+
+    a{
+    height: fit-content;
+
+    }
+
+    img{
+        margin-top: 20px;
+        background-color: rgba(128, 175, 236, 0);
+    }
 }
 
 img{
@@ -309,7 +323,6 @@ html {
     
         img{
             margin-top: 20px;
-    
         }
     }
 
