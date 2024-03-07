@@ -3,11 +3,13 @@ import Nav from './Nav'
 import Email from './Email'
 import { supabase } from './supabaseClient'
 import { useState,useEffect} from 'react'
-
-
+import {  useNavigate} from 'react-router-dom';
 
 
 function Newsletter() {
+
+    const navigate = useNavigate()
+
 
   const[news, getNews] = useState('')
 
@@ -26,6 +28,8 @@ function Newsletter() {
     fetchData()
   }, [])
 
+
+  
   console.log(news)
 
   return (
@@ -39,7 +43,9 @@ function Newsletter() {
     {news ? news.map((news)=>{
 
             return(
-                <button className='newsbtn'> <div className='newsDiv'>
+                <button className='newsbtn'> <div className='newsDiv' onClick={()=>{
+                    navigate('/news',{state:news.id})
+                }}>
                     <h2>{news.title}</h2>
                     <h3>{news.brief}</h3>
                    
