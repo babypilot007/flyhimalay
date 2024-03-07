@@ -10,6 +10,7 @@ function Study() {
   return (
     <>    
             <Nav/>
+            
     <div className='App'>
 
 
