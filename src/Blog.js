@@ -6,6 +6,8 @@ function Blog() {
 
   const[userName, setUserName] = useState('')
   const[getReview, setReview] = useState('')
+  const[license, getLicense] = useState('')
+
   const[message, setMessage] = useState('')
 
 
@@ -17,7 +19,8 @@ function Blog() {
       const {data: {u}} = await supabase.from('Testimonies').insert([
         {
           name : [userName],
-          review : [getReview]
+          review : [getReview],
+          license : [license]
         }
       ])
         console.log(u)
@@ -33,6 +36,7 @@ function Blog() {
   function clear(){
     setReview("");
     setUserName('');
+    getLicense("")
     setMessage('We recieved your Review, Thank You!')
   }
 
@@ -58,6 +62,12 @@ onChange={(e) => setReview(e.target.value)}
     placeholder="Name"
     value={userName}
     onChange={(e) => setUserName(e.target.value)}/>
+
+<input className="text"
+    type="text"
+    placeholder="License You Trained for"
+    value={license}
+    onChange={(e) => getLicense(e.target.value)}/>
 
 <div className='postbtn'>
            <button onClick={() => {postReview();clear()

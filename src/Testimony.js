@@ -42,7 +42,7 @@ function Testimony() {
                         <div className='testDiv'>
                         <p key={inf.id}>{inf.review}</p>
 
-                        <h3 className='namehead'>-{inf.name}</h3>
+                        <h3 className='namehead'>-{inf.name} ({inf.license})</h3>
 
                         </div>
                         </>

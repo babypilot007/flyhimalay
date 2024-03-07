@@ -9,8 +9,7 @@ function Study() {
 
   return (
     <>    
-        <Nav />
-    
+            <Nav/>
     <div className='App'>
 
 
