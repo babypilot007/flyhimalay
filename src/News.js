@@ -27,6 +27,7 @@ function News() {
     fetchData()
   }, [id])
 
+
   return (
     <>
     <div className='App'>
@@ -38,7 +39,7 @@ function News() {
 
                 <div className='newsDiv'>
                     <h2>{news.title}</h2>
-                    <h3>{news.details}</h3>
+                    <div dangerouslySetInnerHTML={{ __html: news.details }}></div>
                    
                    <div className='newsdivfoot'> <h4>- {news.name}</h4><h4>{news.date}</h4></div>
                 </div>

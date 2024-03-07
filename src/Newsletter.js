@@ -32,6 +32,9 @@ function Newsletter() {
   
   console.log(news)
 
+
+
+
   return (
     <>
     <Nav />
@@ -50,7 +53,7 @@ function Newsletter() {
                     navigate('/news',{state:news.id})
                 }}>
                     <h2>{news.title}</h2>
-                    <h3>{news.brief}</h3>
+                    <h3>{news.brief}</h3>   
                    
                    <div className='newsdivfoot'> <h4>- {news.name}</h4><h4>{news.date}</h4></div>
                 </div></button>
