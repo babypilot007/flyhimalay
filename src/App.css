@@ -162,7 +162,7 @@ html {
         
     }
 
-.navOpen[openNav='0']{
+.navOpen[opennav='0']{
         height: 2vh;
         text-align: right;
         padding-right: 10px;
@@ -177,7 +177,7 @@ html {
         }
     }
 
-.navOpen[openNav='1']{
+.navOpen[opennav='1']{
         height: 20vh;
         text-align: right;
         padding-right: 10px;
@@ -189,7 +189,7 @@ html {
             color :red
         }
     }
-.navOpen[openNav='3']{
+.navOpen[opennav='3']{
         height: 2vh;
         text-align: right;
         padding-right: 10px;
@@ -443,13 +443,44 @@ span{
             margin-top: 20px;
         }
     }
-.news{
-    text-align: center;
-}
+
+    .news{
+        position: relative;
+        display: block;
+        justify-content: center;
+    }
+
+    .news h1{
+        text-align: center;
+    }
+
 .newsDiv{
     background-color: rgb(192, 226, 255);
+    padding: 5px;
+    padding-left: 10px;
     border-radius: 5px;
-    height: auto;
+    border: solid 1px black;
+}
+
+.newsDiv h3{
+    font-weight: 400;
+    text-align: left;
+}
+
+.newsdivfoot{
+    margin-top: -20px;
+    margin-right: 5vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsbtn{
+    background-color: rgba(0, 0, 255, 0);
+    margin: 0;
+    color: black;
+    border-radius: 5px;
+
 }
 
 }

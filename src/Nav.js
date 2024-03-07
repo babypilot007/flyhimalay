@@ -48,15 +48,15 @@ export default function Nav() {
     
       </div >
 
-      <div  className='navOpen' openNav={navTans}>
+      <div  className='navOpen' opennav={navTans}>
 
       {nav ? 
-       <div  className='navOpen' openNav={navTans}>
+       <div  className='navOpen' opennav={navTans}>
        <ul>
        <li><button onClick={()=>{navigate('/')}}>Home</button></li>
      <li> <button onClick={()=>{navigate('/study')}}>Study Material</button></li>
      <li> <button onClick={()=>{navigate('/testimony')}}>Testimonials</button></li>
-       <li><button onClick={()=>{navigate('/contact')}}>Contact</button></li>
+       <li><button onClick={()=>{navigate('/contact')}}>Connect</button></li>
       <br/> <li><button onClick={()=>{navigate('/newsletter')}} className='newsHead'>Newsletter</button></li>
 
        </ul>
