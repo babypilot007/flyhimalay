@@ -65,6 +65,7 @@ html {
   max-width: 100%;
   overflow-x: hidden;
   background-image: linear-gradient( rgb(130, 181, 244), rgb(118, 169, 247)); 
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -90,6 +91,7 @@ html {
     color: rgb(0, 0, 0);
     background-color: rgb(136, 190, 245);
 }
+
 
 .prop{
     position: relative;
@@ -441,7 +443,9 @@ span{
             margin-top: 20px;
         }
     }
-
+.news{
+    text-align: center;
+}
 .newsDiv{
     background-color: rgb(192, 226, 255);
     border-radius: 5px;
