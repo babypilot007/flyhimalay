@@ -57,7 +57,7 @@ export default function Nav() {
      <li> <button onClick={()=>{navigate('/study')}}>Study Material</button></li>
      <li> <button onClick={()=>{navigate('/testimony')}}>Testimonials</button></li>
        <li><button onClick={()=>{navigate('/contact')}}>Contact</button></li>
-      <br/> <li><button onClick={()=>{navigate('/newsletter')}}>Newsletter</button></li>
+      <br/> <li><button onClick={()=>{navigate('/newsletter')}} className='newsHead'>Newsletter</button></li>
 
        </ul>
 
