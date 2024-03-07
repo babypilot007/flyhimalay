@@ -23,7 +23,7 @@ function Home() {
 <div className='info_details'> 
             
               <p className='namaste'>Namaste!</p>
-             <div className='dets'>
+                <div className='dets'>
               <p>I am a Certified Flight Instructor,</p>
               <p>With About <span>600 hours of Dual</span> Instructions given.</p>
               <p>I have acquired around <span>1200 Hours</span> of Total Flight Time.</p>

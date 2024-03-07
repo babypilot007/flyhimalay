@@ -38,12 +38,15 @@ function Newsletter() {
 
     <div className='App'>
         <div className='news'>
+            
             <h1>Newsletter</h1>
+
 
     {news ? news.map((news)=>{
 
             return(
-                <button className='newsbtn'> <div className='newsDiv' onClick={()=>{
+            <div className='newsDiv'>
+                <button className='newsbtn'> <div  onClick={()=>{
                     navigate('/news',{state:news.id})
                 }}>
                     <h2>{news.title}</h2>
@@ -51,6 +54,7 @@ function Newsletter() {
                    
                    <div className='newsdivfoot'> <h4>- {news.name}</h4><h4>{news.date}</h4></div>
                 </div></button>
+                </div>
             )
     })
        

@@ -11,8 +11,6 @@ function Testimony() {
 
   useEffect(()=>{
     const fetchData = async ()=>{
-
-    
       try {
         const response = await supabase.from('Testimonies').select('*')
 

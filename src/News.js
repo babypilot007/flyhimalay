@@ -4,6 +4,7 @@ import { useState,useEffect} from 'react'
 import { useLocation } from "react-router-dom";
 
 
+
 function News() {
     const location = useLocation()
     var id = location.state
@@ -34,6 +35,7 @@ function News() {
 
             return(
                 <div className='newspage'>
+
                 <div className='newsDiv'>
                     <h2>{news.title}</h2>
                     <h3>{news.details}</h3>
