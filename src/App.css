@@ -254,7 +254,7 @@ html {
         padding: 10px;
         height: fit-content;
         background-color:rgba(209, 210, 214, 0.582) ;
-        text-align: justify ;
+        text-align: left ;
     
         p{
             font-weight: 600;

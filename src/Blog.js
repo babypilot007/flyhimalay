@@ -1,8 +1,13 @@
 import React from 'react'
 import { supabase } from './supabaseClient'
 import { useState} from 'react'
+import { useNavigate } from 'react-router-dom';
+
 
 function Blog() {
+
+  const navigate = useNavigate()
+
 
   const[userName, setUserName] = useState('')
   const[getReview, setReview] = useState('')
@@ -38,6 +43,8 @@ function Blog() {
     setUserName('');
     getLicense("")
     setMessage('We recieved your Review, Thank You!')
+
+    navigate('/testimony')
   }
 
   return (
