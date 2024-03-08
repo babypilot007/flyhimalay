@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import Email from './Email'
+import Maillist from './Maillist'
 import { supabase } from './supabaseClient'
 import { useState,useEffect} from 'react'
 import {  useNavigate} from 'react-router-dom';
@@ -66,9 +67,12 @@ function Newsletter() {
        
 
 
-      </div>
-
+      </div >
+   
     </div>
+    <div className='maillistdiv'>
+<Maillist/>
+</div>
 <Email/>
     </>
   )

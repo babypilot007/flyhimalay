@@ -3,6 +3,7 @@ import p6 from './images/p6.png'
 import Nav from './Nav';
 // import Email from './Email';
 import Footer from './Footer';
+import Maillist from './Maillist';
 
 function Home() {
   return (
@@ -33,9 +34,11 @@ function Home() {
               <a href="https://www.p6aviation.com/"><img src={p6} alt="p6"></img></a>
               </div>
 </div>
-      
+    
   </div>
-
+  <div className='maillistdiv'>
+      <Maillist/>
+      </div>
   <Footer />
 
   </div>

@@ -488,6 +488,22 @@ span{
 .newspage{
     margin-top: 20px;
 }
+
+.maillist{
+    position: relative;
+    display: block;
+    justify-content: center;
+}
+
+.maillistdiv{
+    position: static;
+    display: flex;
+    justify-content: center;
+
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    bottom: 0%;
+}
 }
 
 
