@@ -1,13 +1,67 @@
 import React from 'react'
+import Footer from './Footer'
+import { useState } from 'react'
+import { supabase } from './supabaseClient'
+
 
 function Maillist() {
-  return (
-    <div className='maillist'>
 
-        <input type='text' placeholder='First Name'></input>
-        <br></br>
-        <button>Add to the Maillist</button>
-    </div>
+    const[firstName, getFirstName] = useState('')
+    const[LastName, getLastName] = useState('')
+    const[Email, getEmail] = useState('')
+
+
+    // function onSubmit(event){
+    //     event.preventDefault()
+    // }
+
+    const mail = async () =>{
+
+        try {
+          const {data: {u}} = await supabase.from('userdetails').insert([
+            {
+              first_name : [firstName],
+              last_name : [LastName],
+              email : [Email]
+            }
+          ])
+            console.log(u)
+       
+        } catch (error) {
+    
+        }
+    
+     
+    
+      }
+
+  return (
+    <>
+    <div>
+        
+            <form className='mail_form'>
+        <input type='text' placeholder='First Name'
+        value={firstName}
+  onChange={(e) => getFirstName(e.target.value)}
+    required
+        ></input>
+        <input type='text' placeholder='Last Name'
+        value={LastName}
+         onChange={(e) => getLastName(e.target.value)} 
+        required></input>
+        <input type='text' placeholder='Email'
+        value={Email}
+         onChange={(e) => getEmail(e.target.value)} required></input>
+        <p>Add me to the Mailing List</p>
+    <input type='submit' value={'Add me'} className='submitbtn' onClick={()=>{mail()}}></input>
+        </form >
+        </div>
+     <div>   
+<Footer/>
+</div>
+
+    </>
+
   )
 }
 

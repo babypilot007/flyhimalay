@@ -1,6 +1,5 @@
 import React from 'react'
 import Nav from './Nav'
-import Email from './Email'
 import Maillist from './Maillist'
 import { supabase } from './supabaseClient'
 import { useState,useEffect} from 'react'
@@ -73,7 +72,6 @@ function Newsletter() {
     <div className='maillistdiv'>
 <Maillist/>
 </div>
-<Email/>
     </>
   )
 }
