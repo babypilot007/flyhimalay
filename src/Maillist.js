@@ -11,6 +11,8 @@ function Maillist() {
     const[Email, getEmail] = useState('')
 
     const[dets, getDets] = useState('Add me to the Mailing List')
+    const[detsDiv, getDetsDiv] = useState(false)
+
 
 
 
@@ -22,6 +24,7 @@ function Maillist() {
 
 
         if(!firstName || !LastName || !Email){
+            getDetsDiv(true)
 
             getDets("Please enter valid Details")
         }
@@ -63,9 +66,18 @@ function Maillist() {
         <input type='text' placeholder='Email'
         value={Email}
          onChange={(e) => getEmail(e.target.value)} required></input>
-        <p>{dets}</p>
+
+
+
+         {detsDiv ? <div className='noInfo'>{dets}</div>:<div className='yesInfo'><p>{dets}</p>
+</div>}
+        
+    
     <input type='submit' value={'Add me'} className='submitbtn' onClick={()=>{mail()}} ></input>
         </form >
+
+       
+
         </div>
      <div>   
 <Footer/>
