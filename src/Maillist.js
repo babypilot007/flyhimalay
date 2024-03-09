@@ -10,12 +10,24 @@ function Maillist() {
     const[LastName, getLastName] = useState('')
     const[Email, getEmail] = useState('')
 
+    const[dets, getDets] = useState('Add me to the Mailing List')
+
+
 
     // function onSubmit(event){
     //     event.preventDefault()
     // }
 
-    const mail = async () =>{
+    const mail = async (event) =>{
+
+
+        if(!firstName || !LastName || !Email){
+
+            getDets("Please enter valid Details")
+        }
+
+        else {
+            alert("Welcome to the club")
 
         try {
           const {data: {u}} = await supabase.from('userdetails').insert([
@@ -26,12 +38,11 @@ function Maillist() {
             }
           ])
             console.log(u)
-       
         } catch (error) {
     
         }
     
-     
+    }
     
       }
 
@@ -52,8 +63,8 @@ function Maillist() {
         <input type='text' placeholder='Email'
         value={Email}
          onChange={(e) => getEmail(e.target.value)} required></input>
-        <p>Add me to the Mailing List</p>
-    <input type='submit' value={'Add me'} className='submitbtn' onClick={()=>{mail()}}></input>
+        <p>{dets}</p>
+    <input type='submit' value={'Add me'} className='submitbtn' onClick={()=>{mail()}} ></input>
         </form >
         </div>
      <div>   
