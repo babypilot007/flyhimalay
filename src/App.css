@@ -96,12 +96,12 @@ html {
 .prop{
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    padding-right: 10px;
 }
 .propImg{
     height: 52px;
-    cursor: none
-}
+}   
 .propImg[rot = '1']{
     animation: rot_init .3s 1 forwards  ;
 }
@@ -536,6 +536,489 @@ span{
 }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 800px) and (min-height:400px){
+   
+    .nav{
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            height: fit-content;
+            color: azure;
+            background-color: rgb(22, 21, 21);
+            box-shadow: 5px 0px 10px black;
+            display: block;
+            justify-content:   center ;
+                
+        }
+    
+    .newsHead{
+        color: rgb(0, 0, 0);
+        background-color: rgb(136, 190, 245);
+    }
+    
+    
+    .prop{
+        position: relative;
+        display: flex;
+        justify-content: right;
+    }
+    .propImg{
+        height: 52px;
+    }
+    .propImg[rot = '1']{
+        animation: rot_init .3s 1 forwards  ;
+    }
+    
+    .propImg[rot = '0']{
+        animation: rot .3s 1 forwards  ;
+    }
+    
+    .propImg[rot = '3']{
+        animation: rot_fin .3s 1 backwards  ;
+    }
+    
+    
+    
+    @keyframes rot_init {
+    
+        100% {
+            transform: rotate(0);
+        }
+    }
+    @keyframes rot {
+    
+        100% {
+            transform: rotate(90deg);
+        }
+    }
+    
+    @keyframes rot_fin {
+    
+        0%{
+            transform: rotate(90deg);
+        }
+    
+        100%{transform: rotate(0deg);}
+    }
+    
+    
+    @keyframes navOpen {
+           
+            100%{
+                height:220px;
+            }
+            
+        }
+    @keyframes noNav {
+            100%{
+                height:1vh;
+            } 
+        }
+    @keyframes navClose {
+            0%{
+                height:150px;
+                
+            }
+            100%{
+                height: 1vh;
+            }
+            
+        }
+    
+    .navOpen[opennav='0']{
+            height: 2vh;
+            text-align: right;
+            padding-right: 10px;
+            background-color: rgb(21, 21, 22);
+            animation: noNav .1s  forwards  ;
+    
+            button{
+                color: rgba(255, 255, 255, 0);
+        }
+            :hover{
+                color :red
+            }
+        }
+    
+    .navOpen[opennav='1']{
+            height: 20vh;
+            text-align: right;
+            padding-right: 10px;
+            background-color: rgb(21, 21, 22);
+            animation: navOpen .02s ease-in forwards  ;
+    
+        
+            :hover{
+                color :red
+            }
+        }
+    .navOpen[opennav='3']{
+            height: 2vh;
+            text-align: right;
+            padding-right: 10px;
+            background-color: rgb(21, 21, 22);
+            animation: navClose .4s ease-out forwards  ;
+    
+        
+            :hover{
+                color :red
+            }
+        }
+        
+    li{
+            color: rgba(240, 248, 255, 0);
+            list-style: none;
+    
+        }
+    
+    span{
+            padding: 1px;
+            font-weight: 500;
+            background-color: rgb(218, 227, 255);
+            text-shadow: 2px 2px 15px black;
+        }
+    
+        .namaste{
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 30px;
+            width: 100%;
+        }
+        .name{
+            color: rgb(7, 5, 29);
+            text-align: center;
+            margin-top: 20px;
+            background-color: rgba(240, 248, 255, 0.461);
+            padding: 10px;
+            font-size: 25px;
+            p{
+                font-weight: bolder;
+                line-height: 10px;
+            }
+        }
+        
+        .info_details{
+            color: rgb(7, 5, 29);
+            margin-top: 30px;
+            margin: 30px 10px 0px 10px;
+            padding: 10px;
+            border: solid 2px rgb(1, 1, 6);
+            border-radius: 10px;
+            font-weight: 700;
+            
+            button {
+                width: 100%;
+            }
+           
+        
+            
+        }
+    
+    .dets{
+        text-align: center;
+        line-height: 18px;
+    }
+        
+        .img{
+                border-radius: 10px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+        
+        }
+       .img img{
+            height: 50px;
+            background-color: rgb(15, 12, 12);
+            border-radius: 10px; 
+            
+            }
+        .courses{
+            text-align: center;
+              
+        }
+        
+        .course_index{
+            text-align: center;
+            margin-left: 50%;
+            position: absolute;
+            transform: translate(-50%,20%);
+            display: block;
+            justify-content: space-between;
+            font-size: large;
+            width:max-content;
+            height: 10%;
+        
+        
+        
+            button{
+                margin-top: 20px;
+                background-color: rgb(12, 22, 42);
+                border-radius: 10px;
+                color:white;
+                font-size: 20px;
+                border: rgb(41, 25, 25) solid;
+        
+                  :hover{
+                    color: red;
+                  }
+        
+                  :active{
+                    height:fit-content ;
+                    color: red;
+                    
+                  }
+                 
+            }
+        
+           
+        
+        }
+        
+        
+        
+        .email{
+            position: sticky;
+            bottom: 0px;
+            height: 50px;
+            color: white ;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            background-color: rgb(30, 31, 36);
+            box-shadow: 5px 0px 10px black;
+        
+            a{
+                color: rgb(208, 239, 252);
+                font-size: medium;
+                font-weight: 600;
+                font-size: 20px;
+            text-decoration: none;
+        
+            }
+        }
+        
+        .footer{
+            text-align: center;
+            background-color: rgb(20, 20, 22);
+            color : white;
+            font-weight: 600;
+            border-top: solid 2px black;
+            box-shadow: 5px 0px 10px black;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+        
+            a{
+                text-decoration: none;
+                color : white;
+                font-size: 18px;
+        
+            }
+            
+        }
+    
+        .area{
+            justify-content: center;
+            text-align: center;
+        
+            h3{
+                margin-top: 20px;
+                font-size: 35px;
+                
+            }
+            
+        }   
+        
+        .text{
+            margin: 10px;
+            width: 85%;
+            padding: 10px;
+            border: solid black 1px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+        
+        .postbtn{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        
+            button{
+                padding: 10px;
+                border-radius: 5px;
+                font-size: 15px;
+                background-color: rgb(38, 75, 108);
+                color: aliceblue;
+            }
+        }
+        
+        h3{
+            text-align: center;
+        }
+        
+        .testimonies{
+            text-align: center;
+            margin-top: 25px;
+            
+        }
+        
+        .testDiv{
+            border: solid 1px rgb(9, 9, 39);
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            height: fit-content;
+            background-color:rgba(209, 210, 214, 0.582) ;
+            text-align: left ;
+        
+            p{
+                font-weight: 600;
+            }
+            
+        }
+        
+        .namehead{
+            margin-top: 25px;
+            text-align: left ;
+        }
+        
+        .head{
+            text-align: center;
+            margin-top: 40%
+        }
+        
+        .socials{
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .socicons{
+            margin-top: 40px;
+        
+            a{
+            height: fit-content;
+        
+            }
+        
+            img{
+                margin-top: 20px;
+            }
+        }
+    
+        .news{
+            position: relative;
+            display: block;
+            justify-content: center;
+        }
+    
+        .news h1{
+            text-align: center;
+        }
+    
+    .newsDiv{
+        background-color: rgb(192, 226, 255);
+        padding: 5px;
+        margin: 5px;
+        padding-left: 10px;
+        border-radius: 5px;
+        border: solid 1px black;
+    }
+    
+    .newsDiv h3{
+        font-weight: 400;
+        text-align: left;
+    }
+    
+    .newsdivfoot{
+        margin-top: -20px;
+        margin-right: 5vw;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .newsbtn{
+        background-color: rgba(0, 0, 255, 0);
+        margin: 0;
+        color: black;
+        border-radius: 5px;
+        text-align: left;
+        font-size: small;
+    }
+    
+    .newspage{
+        margin-top: 20px;
+    }
+    
+    .maillist{
+        position: relative;
+        display: block;
+        justify-content: center;
+    }
+    
+    
+    
+    .mail_form{
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: rgb(157, 247, 255);
+        background-color: rgb(0, 0, 0);
+        position: relative;
+        display:grid;
+    }
+    
+    .submitbtn{
+        background-color: rgb(134, 212, 241);
+        font-weight:900;
+        font-size: 18px;
+        
+    }
+    
+    .mail_form input {
+        margin: 3px;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: 500;
+        width: 80vw;
+        font-size: 20px;
+    }
+    
+    
+    .noInfo{
+        background-color: red;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .yesInfo{
+        border-radius: 5px;
+        padding: 5px;
+        background-color: rgb(0, 0, 0);
+    }
+    }
 
 
 
