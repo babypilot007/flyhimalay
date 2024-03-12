@@ -9,6 +9,7 @@ function Ppl() {
     <div className='App'>
       <div className='head'>
       <h1>Coming Soon</h1>
+      <div className='course_index'><button><p>Checkride Prep</p></button></div>
       </div>
     </div>
     <Email/>

@@ -507,9 +507,9 @@ span{
 }
 
 .submitbtn{
-    background-color: rgb(134, 212, 241);
+    background-color: rgb(130, 181, 244);
     font-weight:900;
-    font-size: 18px;
+    font-size: 20px;
     
 }
 
@@ -528,12 +528,14 @@ span{
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
+    color: white;
+    font-weight: 700;
+    width: fit-content;
 }
 .yesInfo{
-    border-radius: 5px;
-    padding: 5px;
-    background-color: rgb(0, 0, 0);
-}
+    color: white;
+    text-align: center;
+    }
 }
 
 
@@ -991,7 +993,7 @@ span{
     }
     
     .submitbtn{
-        background-color: rgb(134, 212, 241);
+        background-color:rgb(130, 181, 244);
         font-weight:900;
         font-size: 18px;
         
@@ -1012,6 +1014,8 @@ span{
         border-radius: 5px;
         padding: 5px;
         margin: 5px;
+        color: white;
+        font-weight: 900;
     }
     .yesInfo{
         border-radius: 5px;
