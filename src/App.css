@@ -531,24 +531,69 @@ span{
     justify-content: center;
 }
 
+.submitbtn{
+    border: solid rgb(60, 180, 255);
+    color: solid rgb(60, 180, 255);    
+}
+
 
 
 .mail_form{
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    color: rgb(157, 247, 255);
     background-color: rgb(0, 0, 0);
     position: relative;
     display:grid;
 }
 
-.submitbtn{
-    background-color: rgb(130, 181, 244);
-    font-weight:900;
-    font-size: 20px;
-    
+.mail_form input{
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    position: relative;
+
 }
+
+.mail_form input:focus{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    position: relative;
+
+}
+
+
+.mail_form input:hover{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    position: relative;
+
+}
+
+
+
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.616);
+    padding: 10px;
+    font-style: italic;
+    font-weight: lighter
+}
+
+::placeholder:focus{
+    color: rgba(255, 255, 255, 0.616);
+    padding: 10px;
+    font-style: italic;
+    font-weight: lighter
+}
+
+
 
 .mail_form input {
     margin: 3px;

@@ -72,8 +72,7 @@ function Maillist() {
          {detsDiv ? <div className='noInfo'>{dets}</div>:<div className='yesInfo'><p>{dets}</p>
 </div>}
         
-    
-    <input type='submit' value={'Add me'} className='submitbtn' onClick={()=>{mail()}} ></input>
+    <input className='submitbtn' type='submit' value={'Add me'} onClick={()=>{mail()}} ></input>
         </form >
 
        
