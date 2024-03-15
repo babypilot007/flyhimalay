@@ -87,18 +87,55 @@ html {
             
     }
 
+
+  .navSub{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  } 
+  
+  .donateBtn{
+    font-size: 14px;
+    width: 130px;
+    border-radius: 50px;
+    background-color: rgb(159, 0, 0);
+    color: rgb(255, 255, 255);
+  } 
+
+  .donateBtn:hover{
+    font-size: 14px;
+    width: 130px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(159, 0, 0);
+  } 
 .newsHead{
     color: rgb(0, 0, 0);
     background-color: rgb(136, 190, 245);
+    font-size: 18px;
+    padding: 6px;
+
 }
 
 
 .prop{
     position: relative;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     padding-right: 10px;
+    padding-left: 20px;
+
+     
+
 }
+
+.prop h3{
+    margin-bottom: 0px;
+    margin-top: 35px;
+
+     }
+
+
 .propImg{
     height: 52px;
 }   
@@ -582,7 +619,7 @@ span{
     .prop{
         position: relative;
         display: flex;
-        justify-content: right;
+        justify-content: space-between;
     }
     .propImg{
         height: 52px;

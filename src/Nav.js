@@ -37,6 +37,9 @@ export default function Nav() {
       
     
     <div className='prop' >
+      <div>
+        <h3>Fly With Fun</h3>
+      </div>
       <button 
        className='propImg'
        onClick={()=>{propeller();
@@ -57,8 +60,12 @@ export default function Nav() {
      <li> <button onClick={()=>{navigate('/study')}}>Study Material</button></li>
      <li> <button onClick={()=>{navigate('/testimony')}}>Testimonials</button></li>
        <li><button onClick={()=>{navigate('/contact')}}>Connect</button></li>
-      <br/> <li><button onClick={()=>{navigate('/newsletter')}} className='newsHead'>Newsletter</button></li>
-
+       <br/>
+       
+       <div className='navSub'> 
+      <button className='donateBtn'>Buy me a Coffee</button>
+     <li><button onClick={()=>{navigate('/newsletter')}} className='newsHead'>Newsletter</button></li>
+      </div>
        </ul>
 
 </div> : null}
