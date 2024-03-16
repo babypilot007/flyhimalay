@@ -106,21 +106,35 @@ html {
     justify-content: space-between;
   } 
   
-  .donateBtn{
-    font-size: 14px;
-    width: 130px;
-    border-radius: 50px;
+  .donateBtn {
+    padding: 10px;
+    font-size: 15px;
     background-color: rgb(159, 0, 0);
     color: rgb(255, 255, 255);
+    border-radius: 50px
   } 
 
-  .donateBtn:hover{
-    font-size: 14px;
-    width: 130px;
-    border-radius: 50px;
+  .donateBtn:hover {
+    padding: 10px;
+    font-size: 18px;
     background-color: rgb(255, 255, 255);
-    color: rgb(159, 0, 0);
+    color: rgb(198, 0, 0);
+    border-radius: 50px;
   } 
+  .donateBtn:focus {
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(198, 0, 0);
+    border-radius: 50px;
+
+  } 
+
+ 
+ 
+
+
+
 .newsHead{
     color: rgb(0, 0, 0);
     background-color: rgb(136, 190, 245);
