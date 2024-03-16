@@ -38,7 +38,7 @@ export default function Nav() {
     
     <div className='prop' >
       <div className='focusFlyFun'>
-        <h3 >Focus. Fly. Fun</h3>
+        <button onClick={()=>{navigate('/')}}>Focus. Fly. Fun</button>
       </div>
       <button 
        className='propImg'
