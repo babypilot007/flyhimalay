@@ -37,8 +37,8 @@ export default function Nav() {
       
     
     <div className='prop' >
-      <div>
-        <h3>Fly With Fun</h3>
+      <div className='focusFlyFun'>
+        <h3 >Focus. Fly. Fun</h3>
       </div>
       <button 
        className='propImg'

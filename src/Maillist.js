@@ -54,16 +54,16 @@ function Maillist() {
     <div>
         
             <form className='mail_form'>
-        <input type='text' placeholder='First Name'
+        <input className='formInput' type='text' placeholder='First Name'
         value={firstName}
   onChange={(e) => getFirstName(e.target.value)}
     required
         ></input>
-        <input type='text' placeholder='Last Name'
+        <input className='formInput' type='text' placeholder='Last Name'
         value={LastName}
          onChange={(e) => getLastName(e.target.value)} 
         required></input>
-        <input type='text' placeholder='Email'
+        <input className='formInput' type='text' placeholder='Email'
         value={Email}
          onChange={(e) => getEmail(e.target.value)} required></input>
 
@@ -72,9 +72,11 @@ function Maillist() {
          {detsDiv ? <div className='noInfo'>{dets}</div>:<div className='yesInfo'><p>{dets}</p>
 </div>}
         
-    <input className='submitbtn' type='submit' value={'Add me'} onClick={()=>{mail()}} ></input>
         </form >
 
+        <div className='formSubmit'>
+        <input className='submitbtn' type='submit' value={'Add me'} onClick={()=>{mail()}} ></input>
+        </div>
        
 
         </div>
