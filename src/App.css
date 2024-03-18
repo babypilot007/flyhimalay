@@ -524,6 +524,7 @@ span{
     }
 
     .news{
+        height: 50vh;
         position: relative;
         display: block;
         justify-content: center;
