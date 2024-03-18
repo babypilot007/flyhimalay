@@ -1,5 +1,4 @@
 import React from 'react'
-import Nav from './Nav'
 import insta from './images/insta.png'
 import linked from './images/linked.png'
 import whatsapp from './images/whatsapp.png'
