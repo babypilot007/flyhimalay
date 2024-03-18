@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from './Footer'
 import { useState } from 'react'
 import { supabase } from './supabaseClient'
+import ContactBottom from './ContactBottom'
 
 
 function Maillist() {
@@ -80,8 +81,10 @@ function Maillist() {
        
 
         </div>
+
      <div>   
-<Footer/>
+<ContactBottom/>
+
 </div>
 
     </>
