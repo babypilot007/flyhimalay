@@ -282,7 +282,7 @@ span{
         text-align: center;
         margin-top: 20px;
         width: 100vw;
-        background-color: rgb(121, 193, 255);
+        background-color: #b2d7f8;
         border: solid 1px black;
         p{
             font-weight: bolder;
@@ -297,7 +297,7 @@ span{
         border: solid 2px rgb(1, 1, 6);
         border-radius: 10px;
         font-weight: 700;
-        background-color: rgba(0, 0, 0, 0.272);
+        background-color: rgba(0, 0, 0, 0.151);
         
         button {
             width: 100%;
@@ -368,7 +368,15 @@ span{
     }
     
     
-    
+    .ppldiv{
+        height: 100vh;
+        text-align: center;
+
+    }
+    .ppldiv button{
+        border: solid red;
+    }
+
     .email{
         position: sticky;
         bottom: 0px;
@@ -677,6 +685,9 @@ span{
     height: 80vh;
 }
 
+.studyDiv button{
+    margin: 10px;
+}
 
 
 
@@ -1004,11 +1015,10 @@ span{
             margin-top: 25px;
             text-align: left ;
         }
-        
-        .head{
-            text-align: center;
-            margin-top: 40%
-        }
+
+
+  
+
         
         .socials{
             text-align: center;

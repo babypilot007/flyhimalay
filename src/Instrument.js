@@ -1,18 +1,15 @@
 import React from 'react'
 import Nav from './Nav'
-import Email from './Email'
+import ContactBottom from './ContactBottom'
 
 function Instrument() {
   return (
     <>
     <Nav />
-    <div className='App'>
-    <div className='head'>
+    <div className='ppldiv'>
       <h1>Coming Soon</h1>
       </div>
-    </div>
-
-    <Email/>
+<ContactBottom/>
     </>
   )
 }
