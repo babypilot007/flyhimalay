@@ -3,10 +3,12 @@ import p6 from './images/p6.png'
 import Nav from './Nav';
 // import Email from './Email';
 import Maillist from './Maillist';
+import Count from './Count';
 
 function Home() {
   return (
 < div className='main'>
+  <Count/>
 <Nav />
 
 <div className="App">
