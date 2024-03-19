@@ -21,7 +21,6 @@ function Count() {
       fetchData()
     }, [count])
       
-    console.log(count)
 
     addCount = count + 1
 
@@ -32,7 +31,7 @@ function Count() {
           try {
             const response = await supabase.from('websiteVisit').update({counter : addCount}).eq('id',1)
             
-            console.log(response)
+            if(response){}
     
           } catch (error) {
           
