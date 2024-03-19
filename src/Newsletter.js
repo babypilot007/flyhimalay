@@ -42,7 +42,7 @@ function Newsletter() {
     <div className='App'>
         <div className='news'>
             
-            <h1>Newsletter</h1>
+            <h1>Coming Soon</h1>
 
 
     {news ? news.map((news)=>{

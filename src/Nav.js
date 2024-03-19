@@ -64,7 +64,7 @@ export default function Nav() {
        
        <div className='navSub'> 
       <a className='donateBtn' href='https://www.venmo.com/u/Himalay-Jariwala'>Buy me a Coffee</a>
-     <li><button onClick={()=>{navigate('/newsletter')}} className='newsHead'>Newsletter</button></li>
+     <li><button onClick={()=>{navigate('/newsletter')}} className='newsHead'>Blog</button></li>
       </div>
        </ul>
 
