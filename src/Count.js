@@ -4,34 +4,34 @@ import { supabase } from './supabaseClient';
 function Count() {
 
     const[count, getCount] = useState('')
+    const[addCount, setCount] = useState('')
+
    
-    let addCount
 
 
     useEffect(()=>{
       const fetchData = async ()=>{
         try {
-          const response = await supabase.from('websiteVisit').select('*')
-          getCount(response.data[0].counter)
-
+          const response = await supabase.from('websiteVisit').select('counter')
+          let c = response.data[0].counter
+          getCount(c)
+        console.log(count)
+          setCount(count + 1)
 
         } catch (error) {
         
       }}
       fetchData()
     }, [count])
-      
+    
 
-    addCount = count + 1
-
-    // console.log(addCount)
 
     useEffect(()=>{
         const fetchData = async ()=>{
           try {
             const response = await supabase.from('websiteVisit').update({counter : addCount}).eq('id',1)
             
-            if(response){}
+            console.log(response.data[0].counter)
     
           } catch (error) {
           

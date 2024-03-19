@@ -24,7 +24,7 @@ button {
   border: none;
   cursor: none;
   text-decoration: none;
-  color: aliceblue;
+  color: rgb(255, 252, 240);
   background-color: rgb(21, 21, 22);
   font-size:  calc(15px + 1px + 4px);
   margin-top: 5px;
@@ -67,7 +67,7 @@ html {
 height: fit-content;
   max-width: 100%;
   overflow-x: hidden;
-  background-image: linear-gradient( rgb(255, 255, 255), rgb(255, 255, 255)); 
+  background-image: linear-gradient( rgb(242, 234, 212), rgb(255, 255, 255)); 
   font-family: 'Roboto', sans-serif;
   margin-bottom: 20px;
 
@@ -226,7 +226,7 @@ height: fit-content;
 
         button{
             color: rgba(255, 255, 255, 0);
-    }
+            }
         :hover{
             color :red
         }
@@ -507,6 +507,26 @@ span{
         }
     }
 
+.bottomDiv{
+    color:white;
+    text-align: center;
+        z-index: 999;
+        position: sticky;
+        bottom: 0;
+            display: block;
+            justify-content: space-evenly;
+            background-color: black;
+            padding-top: 5px;
+            border: solid rgb(0, 0, 0);
+        }
+.bub{
+    font-weight: 200;
+    text-decoration: underline;
+    font-size: medium;
+}
+        
+
+
  .socicons_bottom{
     z-index: 999;
     position: sticky;
@@ -514,9 +534,18 @@ span{
         display: flex;
         justify-content: space-evenly;
         background-color: black;
-        padding-top: 5px;
-    
+        padding: 5px;
     }
+
+    .socicons_bottom::after{
+        position: absolute;
+    content: '';
+    height: 1px;
+    margin: 45px auto;
+    width: 60%;
+    background: rgb(255, 255, 255);
+        
+        }
 
 .socicons_bottom img{
         height: 30px;
@@ -524,6 +553,13 @@ span{
         border: solid rgb(255, 255, 255);
         border-radius: 60px;
         border-width: 1px;
+}
+
+.socicons_bottom img:hover{
+    height: 40px;
+}
+.socicons_bottom img:focus{
+    height: 40px;
 }
 
     .news{
@@ -772,16 +808,16 @@ span{
     
         100%{transform: rotate(0deg);}
     }
+
     
-    
-    @keyframes navOpen {
+ @keyframes navOpen {
            
             100%{
                 height:220px;
             }
             
         }
-    @keyframes noNav {
+ @keyframes noNav {
             100%{
                 height:1vh;
             } 
@@ -870,7 +906,7 @@ span{
             }
         }
         
-        .info_details{
+ .info_details{
             color: rgb(7, 5, 29);
             margin-top: 30px;
             margin: 30px 10px 0px 10px;
@@ -887,33 +923,30 @@ span{
             
         }
     
-    .dets{
+.dets{
         text-align: center;
         line-height: 18px;
     }
         
-        .img{
+.img{
                 border-radius: 10px;
                 position: relative;
                 display: flex;
                 justify-content: center;
         
         }
-       .img img{
+.img img{
             height: 50px;
             background-color: rgb(15, 12, 12);
             border-radius: 10px; 
             
-            }
-        .courses{
-            text-align: center;
-              
+      }
+.courses{
+         text-align: center;
         }
         
-       
         
-        
-        .email{
+.email{
             position: sticky;
             bottom: 0px;
             height: 50px;
@@ -934,7 +967,7 @@ span{
             }
         }
         
-        .footer{
+.footer{
             text-align: center;
             background-color: rgb(20, 20, 22);
             color : white;
@@ -954,7 +987,7 @@ span{
             
         }
     
-        .area{
+.area{
             justify-content: center;
             text-align: center;
         
@@ -966,7 +999,7 @@ span{
             
         }   
         
-        .text{
+.text{
             margin: 10px;
             width: 85%;
             padding: 10px;
@@ -976,7 +1009,7 @@ span{
             border-radius: 5px;
         }
         
-        .postbtn{
+.postbtn{
             margin-top: 10px;
             display: flex;
             justify-content: center;
@@ -990,17 +1023,17 @@ span{
             }
         }
         
-        h3{
+h3{
             text-align: center;
         }
         
-        .testimonies{
+.testimonies{
             text-align: center;
             margin-top: 25px;
             
         }
         
-        .testDiv{
+.testDiv{
             border: solid 1px rgb(9, 9, 39);
             border-radius: 10px;
             margin: 10px;
@@ -1015,21 +1048,24 @@ span{
             
         }
         
-        .namehead{
+.namehead{
             margin-top: 25px;
             text-align: left ;
         }
+    
+.bottomDiv{
+    background-color: black;
+}
 
-
-  
-
-        
-        .socials{
+.bottomDiv p{
+    background-color: black;
+}
+.socials{
             text-align: center;
             margin-top: 20px;
         }
         
-        .socicons{
+.socicons{
             margin-top: 40px;
         
             a{
@@ -1041,18 +1077,18 @@ span{
                 margin-top: 20px;
             }
         }
-    
-        .news{
+        
+.news{
             position: relative;
             display: block;
             justify-content: center;
         }
     
-        .news h1{
+.news h1{
             text-align: center;
         }
     
-    .newsDiv{
+.newsDiv{
         background-color: rgb(192, 226, 255);
         padding: 5px;
         margin: 5px;
@@ -1061,12 +1097,12 @@ span{
         border: solid 1px black;
     }
     
-    .newsDiv h3{
+.newsDiv h3{
         font-weight: 400;
         text-align: left;
     }
     
-    .newsdivfoot{
+.newsdivfoot{
         margin-top: -20px;
         margin-right: 5vw;
         position: relative;
@@ -1074,7 +1110,7 @@ span{
         justify-content: space-between;
     }
     
-    .newsbtn{
+.newsbtn{
         background-color: rgba(0, 0, 255, 0);
         margin: 0;
         color: black;
@@ -1083,19 +1119,17 @@ span{
         font-size: small;
     }
     
-    .newspage{
+.newspage{
         margin-top: 20px;
     }
     
-    .maillist{
+.maillist{
         position: relative;
         display: block;
         justify-content: center;
     }
-    
-    
-    
-    .mail_form{
+   
+.mail_form{
         justify-content: center;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -1105,7 +1139,7 @@ span{
         display:grid;
     }
     
-    .submitbtn{
+.submitbtn{
         background-color:rgb(130, 181, 244);
         font-weight:900;
         font-size: 18px;
@@ -1135,7 +1169,7 @@ span{
         padding: 5px;
         background-color: rgb(0, 0, 0);
     }
-    }
+}
 
 
 
