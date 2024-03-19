@@ -3,7 +3,7 @@ import { supabase } from './supabaseClient';
 
 function Count() {
 
-    const[count, getCount] = useState(0)
+    const[count, getCount] = useState('')
    
     let addCount
 
