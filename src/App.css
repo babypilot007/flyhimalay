@@ -506,6 +506,7 @@ span{
             margin-top: 20px;
         }
     }
+
  .socicons_bottom{
     z-index: 999;
     position: sticky;
@@ -514,14 +515,16 @@ span{
         justify-content: space-evenly;
         background-color: black;
         padding-top: 5px;
-        img{
-            height: 30px;
-            background-color: aliceblue;
-            border: solid rgb(255, 255, 255);
-            border-radius: 60px;
-            border-width: 1px;
-        }
+    
     }
+
+.socicons_bottom img{
+        height: 30px;
+        background-color: aliceblue;
+        border: solid rgb(255, 255, 255);
+        border-radius: 60px;
+        border-width: 1px;
+}
 
     .news{
         height: 50vh;
