@@ -35,10 +35,10 @@ function Home() {
               <a href="https://www.p6aviation.com/"><img src={p6} alt="p6"></img></a>
               </div>
 </div>
+<Maillist/>
     
   </div>
 
-      <Maillist/>
 
   </div>
   )

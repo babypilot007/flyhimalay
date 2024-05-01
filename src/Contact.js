@@ -10,7 +10,7 @@ import email from './images/email.png'
 
 function Contact() {
   return (
-    <>
+    <div>
     <Nav/>
     <div className='App'>
 
@@ -27,7 +27,7 @@ function Contact() {
         </div>
 
         </div>
-        </>
+        </div>
   )
 }
 

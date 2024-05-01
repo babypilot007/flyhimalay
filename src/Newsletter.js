@@ -36,7 +36,7 @@ function Newsletter() {
 
 
   return (
-    <>
+    <div>
     <Nav />
 
     <div className='App'>
@@ -69,11 +69,11 @@ function Newsletter() {
 
       </div >
    
+<Maillist/>
   
   </div>
-<Maillist/>
 
-    </>
+    </div>
   )
 }
 

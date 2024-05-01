@@ -79,10 +79,10 @@ html {
 
 
 .App{
-height: fit-content;
+height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
-  background-image: linear-gradient( rgb(227, 196, 111), rgb(255, 255, 255)); 
+  background-color: rgb(255, 234, 176);
   font-family: 'Roboto', sans-serif;
   margin-bottom: 20px;
 
@@ -317,6 +317,7 @@ span{
     .info_details{
         margin-top: 30px;
         padding: 10px;
+        margin-bottom: 20px;
         font-weight: 700;
         background-color: rgba(0, 0, 0, 0.833);
         button {
