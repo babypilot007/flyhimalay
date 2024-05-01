@@ -14,7 +14,7 @@ function News() {
 
   useEffect(()=>{
     const fetchData = async ()=>{
-      try {
+      try { 
         const response = await supabase.from('newsletter').select('*').eq('id',id)
 
             if(response.data !== null){

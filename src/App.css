@@ -32,10 +32,25 @@ button {
   border-radius: 5px;
 }
 
+button:focus::after{
+    position: absolute;
+    content: '';
+    height: 5px;
+    bottom: 0;
+    margin: auto;
+   
+    width: 60%;
+}
 
+.session{
+    background-color: rgb(24, 23, 23);
+    color: white;
+    height: 8vh;
+    padding-top: 20px;
+}
 
 .socicons{
-    margin-top: 40px;
+    margin-top: 30px;
     a{
     height: fit-content;
     }
@@ -43,7 +58,7 @@ button {
   
 }
 .socials img{
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: rgba(128, 175, 236, 0);
 }
 
@@ -67,7 +82,7 @@ html {
 height: fit-content;
   max-width: 100%;
   overflow-x: hidden;
-  background-image: linear-gradient( rgb(242, 234, 212), rgb(255, 255, 255)); 
+  background-image: linear-gradient( rgb(227, 196, 111), rgb(255, 255, 255)); 
   font-family: 'Roboto', sans-serif;
   margin-bottom: 20px;
 
@@ -264,19 +279,26 @@ li{
     }
 
 span{
-        padding: 1px;
+        padding: 2px;
         font-weight: 500;
         background-color: rgb(218, 227, 255);
         text-shadow: 2px 2px 15px black;
+        color: black;
+        font-weight: 700;
     }
 
     .namaste{
+        position: relative;
+        display: flex;
+        justify-content: center;
         text-align: center;
         margin-top: 5px;
         margin-bottom: 10px;
-        font-size: 25px;
-        width: 100%;
-    }
+        font-size: 30px;
+        color: #deedfa;
+        background-color: rgb(31, 31, 29);
+        border-radius: 10px;
+    }   
     .name{
         color: rgb(7, 5, 29);
         text-align: center;
@@ -284,6 +306,7 @@ span{
         width: 100vw;
         background-color: #b2d7f8;
         border: solid 1px black;
+
         p{
             font-weight: bolder;
             line-height: 10px;
@@ -292,13 +315,9 @@ span{
     
     .info_details{
         margin-top: 30px;
-        margin: 30px 10px 0px 10px;
         padding: 10px;
-        border: solid 2px rgb(1, 1, 6);
-        border-radius: 10px;
         font-weight: 700;
-        background-color: rgba(0, 0, 0, 0.151);
-        
+        background-color: rgba(0, 0, 0, 0.833);
         button {
             width: 100%;
         }
@@ -310,6 +329,7 @@ span{
 .dets{
     text-align: center;
     line-height: 18px;
+    color: white;
 }
     
     .img{
@@ -892,7 +912,19 @@ span{
             margin-bottom: 10px;
             font-size: 30px;
             width: 100%;
+
+
         }
+        .namaste::after{
+            position: absolute;
+        content: '';
+        height: 1px;
+        margin: 45px auto;
+        width: 60%;
+        background: rgb(255, 255, 255);
+            
+            }
+
         .name{
             color: rgb(7, 5, 29);
             text-align: center;

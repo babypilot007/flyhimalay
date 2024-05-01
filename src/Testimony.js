@@ -27,9 +27,12 @@ function Testimony() {
 
   console.log(res)
   return (
-    <>
+  <div>
+    <Nav/>
+
     <div className='App'>
-        <Nav/>
+
+
         <div className='testimonies'>
             <h2>Testimonials</h2>
             {res ?
@@ -46,9 +49,11 @@ function Testimony() {
                     )
             }) :null}
         </div>
+
     </div>
     <ContactBottom/>
-        </>
+
+    </div>
   )
 }
 
