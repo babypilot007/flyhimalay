@@ -294,11 +294,12 @@ span{
         text-align: center;
         margin-top: 5px;
         margin-bottom: 10px;
-        font-size: 30px;
+        font-size: 28px;
         color: #deedfa;
         background-color: rgb(31, 31, 29);
         border-radius: 10px;
-    }   
+        border: solid 1px white;
+        }   
     .name{
         color: rgb(7, 5, 29);
         text-align: center;
