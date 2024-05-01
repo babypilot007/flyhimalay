@@ -45,7 +45,7 @@ button:focus::after{
 .session{
     background-color: rgb(24, 23, 23);
     color: white;
-    height: 8vh;
+    height: 20vh;
     padding-top: 20px;
 }
 

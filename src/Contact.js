@@ -15,7 +15,11 @@ function Contact() {
     <div className='App'>
 
             <div className='socials'>
-              <h3 className='session'>Contact for 1 on 1 Ground Sessions</h3>
+              <div className='session'>
+              <h3 >Contact for 1 on 1 Ground Sessions
+              </h3>
+              <p>Get trained for Private, Instrument, Commercial or Flight Instructor Certificates</p>
+              </div>
                 <div className='socicons'>
                         <a href="mailto: cfihimalay@gmail.com"><img src={email} alt="Linked In" height="54px"></img></a>
                         <br></br><a href=" tel: +1 201-654-5586"><img src={call} alt="Call" height="48px"></img></a>
