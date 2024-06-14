@@ -7,9 +7,11 @@ import Count from './Count';
 
 function Home() {
   return (
+
+
 < div className='main'>
   <Count/>
-<Nav />
+  <Nav />
 
 <div className="App">
     
@@ -24,7 +26,6 @@ function Home() {
 
 <div className='info_details'> 
             
-              <p className='namaste'>Namaste!</p>
                 <div className='dets'>
               <p>I am a Certified Flight Instructor,</p>
               <p>With About a <span>1000 hours of Dual</span> Instructions given.</p>

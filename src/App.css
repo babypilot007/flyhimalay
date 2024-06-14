@@ -5,24 +5,12 @@
 
 }
 
-.noSelect {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none; 
-    -ms-user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    user-select: none;
-}
-.noSelect:focus {
-    outline: none !important;
-}
+
 
 
 button {
   border: none;
-  cursor: none;
+  cursor: pointer;
   text-decoration: none;
   color: rgb(255, 252, 240);
   background-color: rgb(21, 21, 22);
@@ -82,7 +70,7 @@ html {
 height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
-  background-color: rgb(251, 234, 187);
+  background-color: #FBEEAC;
   margin-bottom: 20px;
 
 }
@@ -98,7 +86,7 @@ height: 100vh;
         z-index: 999;
         height: fit-content;
         color: azure;
-        background-color: rgb(21, 21, 22);
+        background-color: #141414;
         box-shadow: 5px 0px 10px black;
         display: block;
         justify-content:   center ;
@@ -232,7 +220,7 @@ height: 100vh;
         height: 2vh;
         text-align: right;
         padding-right: 10px;
-        background-color: rgb(21, 21, 22);
+        background-color: #161617;
         animation: noNav .1s  forwards  ;
 
         button{
@@ -247,7 +235,8 @@ height: 100vh;
         height: 20vh;
         text-align: right;
         padding-right: 10px;
-        background-color: rgb(21, 21, 22);
+        background-color: #151515;
+        
         animation: navOpen .02s ease-in forwards  ;
 
     
