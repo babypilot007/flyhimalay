@@ -51,6 +51,7 @@ useEffect( () => {
                    <div className='newspage'>
    
                    <div className='newsDiv'>
+                    
                        <h2>{news.TopicHeader}</h2>
                        <div dangerouslySetInnerHTML={{ __html: news.TopicDetails }}></div>
                       

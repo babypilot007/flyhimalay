@@ -603,12 +603,11 @@ span{
 }
 
 .newsbtn{
-    background-color: rgba(0, 0, 255, 0);
-    margin: 0;
+    background-color: rgba(155, 181, 255, 0.906);
     color: black;
     border-radius: 5px;
-    text-align: left;
     font-size: small;
+    margin-top: 10px;
 }
 
 .newspage{
@@ -1129,12 +1128,12 @@ h3{
     }
     
 .newsbtn{
-        background-color: rgba(0, 0, 255, 0);
-        margin: 0;
-        color: black;
-        border-radius: 5px;
-        text-align: left;
-        font-size: small;
+    background-color: rgba(90, 90, 237, 0.998);
+    color: black;
+    border-radius: 5px;
+    font-size: small;
+    margin-top: 10px;
+
     }
     
 .newspage{
