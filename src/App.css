@@ -265,9 +265,8 @@ li{
 span{
         padding: 2px;
         font-weight: 500;
-        background-color: rgb(218, 227, 255);
-        text-shadow: 2px 2px 15px black;
-        color: black;
+        text-shadow: 2px 2px 5px rgb(94, 166, 218);
+        color: rgb(238, 230, 230);
         font-weight: 700;
     }
 
@@ -881,10 +880,11 @@ span{
         }
     
     span{
-            padding: 1px;
-            font-weight: 500;
-            background-color: rgb(218, 227, 255);
-            text-shadow: 2px 2px 15px black;
+        padding: 2px;
+        font-weight: 500;
+        text-shadow: 2px 2px 5px rgb(94, 166, 218);
+        color: rgb(238, 230, 230);
+        font-weight: 700;
         }
     
         .namaste{
