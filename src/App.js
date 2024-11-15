@@ -9,7 +9,7 @@ import Contact from './Contact';
 import Newsletter from './Newsletter';
 import PostNews from './PostNews';
 import News from './News';
-
+import Product from './Product';
 import { Routes, Route } from "react-router-dom";
 
 import Home from './Home';
@@ -36,6 +36,8 @@ function App() {
           <Route path='/newsletter' element = {<Newsletter />}></Route>
           <Route path='/postnews' element = {<PostNews />}></Route>
           <Route path='/news' element = {<News />}></Route>
+          <Route path='/products' element = {<Product />}></Route>
+
 
 
 
