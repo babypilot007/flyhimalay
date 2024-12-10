@@ -39,7 +39,7 @@ function Product() {
               res.map((inf,key)=>{
                       return(
                           <>
-                          <a href='https://amzn.to/4iqhx0N'>
+                          <a href={inf.prodLink}>
 
      <div className='productBg' >
         <img src={inf.prodImg}  height='80px' alt='Bose A30'></img> 
