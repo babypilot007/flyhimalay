@@ -4,8 +4,12 @@ import Nav from './Nav';
 // import Email from './Email';
 import Maillist from './Maillist';
 import Count from './Count';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+
+  const navigate = useNavigate()
+
   return (
 
 
@@ -36,6 +40,10 @@ function Home() {
               <a href="https://www.p6aviation.com/"><img src={p6} alt="p6"></img></a>
               </div>
 </div>
+
+          <div className='prodBtn'>
+                <button className='donateBtn' onClick={()=>{navigate('/products')}}>Flying Accessories</button>
+          </div>
 <Maillist/>
     
   </div>

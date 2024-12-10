@@ -732,6 +732,27 @@ span{
     margin: 10px;
 }
 
+.prodBtn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    padding: 5px;
+
+    button{
+    animation: prodBtn_anim 2s infinite;
+    border: solid 2px red;
+    }
+}
+
+@keyframes prodBtn_anim {
+    
+    50% {
+        background-color: wheat;
+        color: red;
+    }
+
+}
+
 
 .productBg{
     height: 20vh;
