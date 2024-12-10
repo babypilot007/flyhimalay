@@ -42,7 +42,7 @@ function Product() {
                           <a href={inf.prodLink}>
 
      <div className='productBg' >
-        <img src={inf.prodImg}  height='80px' alt={inf.prodName}></img> 
+        <img src={inf.prodImg}  height='100px' width='70px' alt={inf.prodName}></img> 
         <div className='productDescp'>
                  <h4>{inf.prodName}</h4>
                  <p>{inf.prodDescp}</p>
