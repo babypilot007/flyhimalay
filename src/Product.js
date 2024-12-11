@@ -34,7 +34,7 @@ function Product() {
       <div className='App'>
   
   
-          <div className='testimonies'>
+    <div className='testimonies'>
               {res ?
               res.map((inf,key)=>{
                       return(

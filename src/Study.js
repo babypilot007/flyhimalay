@@ -18,7 +18,8 @@ function Study() {
             <h1>Study Courses</h1>
             <div className='ppl'>
 
-<button onClick={()=>{navigate('/study/ppl')}}><p>Private Pilot Course </p></button>
+<button onClick={()=>{navigate('/ppl')}}><p>Private Pilot Course </p></button>   
+
 
        
 </div>

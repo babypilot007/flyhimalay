@@ -10,11 +10,13 @@ import Newsletter from './Newsletter';
 import PostNews from './PostNews';
 import News from './News';
 import Product from './Product';
+
 import { Routes, Route } from "react-router-dom";
 
 import Home from './Home';
 import Study from './Study';
 import PplTopic from './PplTopic';
+import PplDownloads from './PplDownloads';
 
 function App() {
 
@@ -23,7 +25,7 @@ function App() {
      <Routes>
           <Route path='/' element = {<Home />}></Route>
           <Route path='/study' element = {<Study />}></Route>
-          <Route path='/study/Ppl' element = {<Ppl />}></Route>
+          <Route path='/Ppl' element = {<Ppl />}></Route>
 
           <Route path='/ppl/:id' element = {<PplTopic />}></Route>
 
@@ -37,6 +39,8 @@ function App() {
           <Route path='/postnews' element = {<PostNews />}></Route>
           <Route path='/news' element = {<News />}></Route>
           <Route path='/products' element = {<Product />}></Route>
+          <Route path='/ppl/ppldownloads' element = {<PplDownloads />}></Route>
+
 
 
 

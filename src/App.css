@@ -379,7 +379,9 @@ span{
 
     }
     .ppldiv button{
-        border: solid red;
+        margin-top: 10px;
+        height: 10vh;
+        font-size: 10px;
     }
 
     .email{
