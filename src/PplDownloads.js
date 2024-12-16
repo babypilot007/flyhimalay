@@ -45,7 +45,7 @@ function PplDownloads() {
                           <>
                           <a href={inf.downloadLink}>
 
-     <div className='productBg' >
+     <div className='downloadBox' >
          
         <div className='productDescp'>
                  <h4>{inf.downloadName}</h4>

@@ -791,6 +791,25 @@ span{
     }
 }
 
+.downloadBox{
+    margin: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: scroll;
+    background-color: rgba(30, 30, 28, 0.523);
+    box-shadow: 5px 5px 5px #141414;
+
+    img{
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        border: solid 2px black;
+        margin-top: 20px;
+    }
+}
 
 
 
