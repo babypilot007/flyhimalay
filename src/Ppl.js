@@ -19,7 +19,7 @@ function Ppl() {
     async function fetchData() {
         try {
 
-            const response = await supabase.from('topics').select('*')
+            const response = await supabase.from('videoLink').select('*')
 
 
             if(response){
@@ -50,6 +50,14 @@ function Ppl() {
       <div className='ppldiv'>
         
 <h1>PPL</h1>
+
+<iframe
+  src={dat.Link}
+  frameborder='0'
+  allow='autoplay; encrypted-media'
+  allowfullscreen
+  title='video'
+/>
 
 <button onClick={()=>{navigate('/ppl/ppldownloads')}}><p>Important Downloads </p></button>   
 
