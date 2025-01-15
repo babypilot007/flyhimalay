@@ -55,7 +55,7 @@ function Ppl() {
   src={dat.Link}
   frameborder='0'
   allow='autoplay; encrypted-media'
-  allowfullscreen
+  allowfullscreen = 'yes'
   title='video'
 />
 
