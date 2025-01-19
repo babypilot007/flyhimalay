@@ -37,6 +37,7 @@ export default function Nav() {
       
     
     <div className='prop' >
+      
       <div className='focusFlyFun'>
         <button onClick={()=>{navigate('/')}}>Focus. Fly. Fun</button>
       </div>
@@ -51,7 +52,6 @@ export default function Nav() {
     
       </div >
 
-      <div  className='navOpen' opennav={navTans}>
 
       {nav ? 
        <div  className='navOpen' opennav={navTans}>
@@ -72,8 +72,6 @@ export default function Nav() {
        </ul>
 
 </div> : null}
-</div>
-     
     
     </div>
 
