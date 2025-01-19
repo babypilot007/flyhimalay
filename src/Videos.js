@@ -44,19 +44,20 @@ function Videos() {
         return(
 
           <>
-      <div className='ppldiv'>
+      <div className='frame'>
         
+    <div className='frameInset'>
 
-<iframe
-  src={dat.Link}
-  frameborder='0'
-  allow='autoplay; encrypted-media'
-  allowfullscreen = 'yes'
-  title='video'
-  className='frame'
-/>
+                            <iframe
+                        src={dat.Link}
+                        frameborder='0'
+                        allow='autoplay; encrypted-media'
+                        allowfullscreen = 'yes'
+                        title='video'
+                        />
 
-
+                        <h4>{dat.Name}</h4>
+            </div>
       </div>
 
           </>

@@ -782,9 +782,35 @@ span{
 }
 
 .frame{
-    margin-top: 20px;
-    box-shadow: 5px 5px 5px #141414;
+    position: relative;
+    display: flex;
+    justify-content: center;
 
+    iframe{
+        margin-left: 8vw;
+        margin-right: 8vw;
+
+        height: 30vh;
+        width: 80vw;
+        margin-top: 20px;
+        box-shadow: 5px 5px 5px #141414;
+
+    }
+    
+  
+}
+
+.frameInset{
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #343434a6;
+
+    h4 {
+        text-align: center;
+        padding-bottom: 10px;
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
 }
 
 .productDescp{
