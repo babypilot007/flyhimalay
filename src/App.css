@@ -153,6 +153,10 @@ height: 100vh;
     justify-content:space-evenly;
 }
 
+.propImg{
+    background-color: #14141400;
+    cursor: none;
+}
 
 
 .propImg[rot = '1']{
