@@ -10,6 +10,7 @@ import Newsletter from './Newsletter';
 import PostNews from './PostNews';
 import News from './News';
 import Product from './Product';
+import Videos from './Videos';
 
 import { Routes, Route } from "react-router-dom";
 
@@ -40,6 +41,7 @@ function App() {
           <Route path='/news' element = {<News />}></Route>
           <Route path='/products' element = {<Product />}></Route>
           <Route path='/ppl/ppldownloads' element = {<PplDownloads />}></Route>
+          <Route path='/videos' element = {<Videos />}></Route>
 
 
 

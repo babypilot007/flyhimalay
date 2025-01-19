@@ -27,6 +27,12 @@ function Home() {
       </div>
     </div>
 
+  
+    <div className='prodBtn'>
+                <button className='donateBtn' onClick={()=>{navigate('/products')}}>Flying Accessories</button>
+                <button className='donateBtn' onClick={()=>{navigate('/videos')}}>Videos</button>
+
+    </div>
 
 <div className='info_details'> 
             
@@ -41,9 +47,7 @@ function Home() {
               </div>
 </div>
 
-          <div className='prodBtn'>
-                <button className='donateBtn' onClick={()=>{navigate('/products')}}>Flying Accessories</button>
-          </div>
+         
 <Maillist/>
     
   </div>
