@@ -803,16 +803,21 @@ span{
 .frameInset{
     border-radius: 10px;
     margin: 5px;
-    background-color: #343434a6;
+    background-color: #343434cf;
 
-    h4 {
-        text-align: center;
-        padding-bottom: 10px;
-        margin-left: 8vw;
-        margin-right: 8vw;
-    }
+   
 }
 
+.frameText{
+    text-align: center;
+    background-color: #bebebe;
+
+    h4{
+        font-size: 12px;
+        padding: 5px;
+    }
+
+}
 .productDescp{
     width: 100%;
     padding-left: 10px;

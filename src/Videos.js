@@ -56,7 +56,7 @@ function Videos() {
                         title='video'
                         />
 
-                        <h4>{dat.Name}</h4>
+                        <div className='frameText'><h4>{dat.Name}</h4></div>
             </div>
       </div>
 
