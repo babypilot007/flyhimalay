@@ -26,7 +26,55 @@ linear-gradient(rgba(6,16,30,.84),rgba(6,16,30,.92)),
 url("./images/sr22.jpg.png") center/cover fixed no-repeat;
 }
 a{text-decoration:none;color:inherit}
-img{display:block;max-width:100%}
+
+/* ==========================================
+   P6 Logo
+========================================== */
+
+.img{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:100%;
+
+}
+
+.img a{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:100%;
+
+}
+
+.img img{
+
+    width:100%;
+
+    max-width:420px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    transition:.3s ease;
+
+}
+
+.img img:hover{
+
+    transform:scale(1.03);
+
+}
+
 button,input,textarea{font:inherit}
 
 /* Layout */
