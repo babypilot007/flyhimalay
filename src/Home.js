@@ -1,60 +1,72 @@
-import React from 'react'
-import p6 from './images/p6.png'
-import Nav from './Nav';
-// import Email from './Email';
-import Maillist from './Maillist';
-import Count from './Count';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
+import p6 from "./images/p6.png";
+import Nav from "./Nav";
+import Maillist from "./Maillist";
+import Count from "./Count";
 
 function Home() {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
+    <div className="main">
+      <Count />
+      <Nav />
 
+      <div className="App">
+        <div className="name">
+          <h1>Himalay Jariwala</h1>
 
-< div className='main'>
-  <Count/>
-  <Nav />
+          <div className="info">
+            <p>CSIP</p>
+            <p>CFI / CFII</p>
+          </div>
+        </div>
 
-<div className="App">
-    
-    <div className='name'>
-      <h1>Himalay Jariwala</h1>
-      < div className='info'>
-      <p>CSIP</p>
-              <p>CFI/CFII</p>
+        <div className="prodBtn">
+          <button
+            className="donateBtn"
+            onClick={() => navigate("/products")}
+          >
+            Flying Accessories
+          </button>
+
+          <button
+            className="donateBtn"
+            onClick={() => navigate("/videos")}
+          >
+            Videos
+          </button>
+        </div>
+
+        <div className="info_details">
+          <div className="dets">
+            <p>A Certified Flight Instructor.</p>
+            <p>
+              <strong>2,500+</strong> hours of dual instruction given.
+            </p>
+            <p>
+              <strong>2,800+</strong> total flight hours.
+            </p>
+            <p>Currently instructing at:</p>
+          </div>
+
+          <div className="img">
+            <a
+              href="https://www.p6aviation.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p6} alt="P6 Aviation" />
+            </a>
+          </div>
+        </div>
+
+        <Maillist />
       </div>
     </div>
-
-  
-    <div className='prodBtn'>
-                <button className='donateBtn' onClick={()=>{navigate('/products')}}>Flying Accessories</button>
-                <button className='donateBtn' onClick={()=>{navigate('/videos')}}>Videos</button>
-
-    </div>
-
-<div className='info_details'> 
-            
-                <div className='dets'>
-              <p> A Certified Flight Instructor,</p>
-              <p>With About a <span>2500 hours dual</span>Instructions given.</p> 
-              <p>and has acquired around <span>2800 Hours</span> of Total Flight Time.</p>
-              <p>Currently Instructing at : </p><br></br>
-              </div>
-              <div className='img'>
-              <a href="https://www.p6aviation.com/"><img src={p6} alt="p6"></img></a>
-              </div>
-</div>
-
-         
-<Maillist/>
-    
-  </div>
-
-
-  </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
