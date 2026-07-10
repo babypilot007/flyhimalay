@@ -22,7 +22,7 @@ function Home() {
     <div className='name'>
       <h1>Himalay Jariwala</h1>
       < div className='info'>
-      <p>FAA Certified Flight Instructor</p>
+      <p>CSIP</p>
               <p>CFI/CFII</p>
       </div>
     </div>
