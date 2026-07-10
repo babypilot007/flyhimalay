@@ -38,8 +38,8 @@ function Home() {
             
                 <div className='dets'>
               <p> A Certified Flight Instructor,</p>
-              <p>With About a <span>1200 hours of Dual</span> Instructions given.</p>
-              <p>and has acquired around <span>1600 Hours</span> of Total Flight Time.</p>
+              <p>With About a <span>2500 hours dual</span>Instructions given.</p> 
+              <p>and has acquired around <span>2800 Hours</span> of Total Flight Time.</p>
               <p>Currently Instructing at : </p><br></br>
               </div>
               <div className='img'>
